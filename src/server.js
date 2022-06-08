@@ -12,6 +12,7 @@ app.set("views", path.join(__dirname, "resources/views"));
 
 // Config static files
 app.use(express.static(path.join(__dirname, "public")));
+app.use("/css", express.static((__dirname, "public/css")));
 // use res.render to load up an ejs view file
 app.use(expressLayouts);
 // index page
